@@ -1,12 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import FadeIn from "./src/FadeIn";
+import Home from "./src/Home";
+import StaticTabbar from "./src/Sample";
+import TabBar from "./src/components/Tabbar";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <TabBar />
     </View>
   );
 }
@@ -14,8 +17,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#ea3345",
+    justifyContent: "flex-end",
+    // alignItems: "flex-end",
   },
 });
